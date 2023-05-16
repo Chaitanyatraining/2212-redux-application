@@ -1,0 +1,6 @@
+ACTIONS
+Action type : ADD_TO_CART
+ACTION CREATOR - Javascript functions which returns a plain Javascript object which consists of type and payload
+Dispatch
+Reducer
+Store
