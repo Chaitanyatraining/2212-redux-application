@@ -14,6 +14,7 @@ export const Header = () => {
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         <Link to="products" class="nav-link" href="#">Products</Link>
+        <Link to="cartpage" class="nav-link" href="#">Cart</Link>
         <a class="nav-link" href="#">Pricing</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </div>
