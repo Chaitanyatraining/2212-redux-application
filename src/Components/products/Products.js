@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { fetchProducts } from '../redux/ProductActions/ProductActions';
+import { useDispatch } from 'react-redux';
 
 export const Products = () => {
     const [products, setProducts] = useState([]);
-
+    const dispatch = useDispatch()
+    
     useEffect(() => {
         getProducts();
+        // dispatch(fetchProducts())
     }, [])
 
     const getProducts = async () => {
