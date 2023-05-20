@@ -13,6 +13,10 @@ export const ProductReducer = (state= initialState, action) =>{
             const filteredProduct = state.cartData.filter(
                 (cartItem)=> cartItem.id != action.payload)
             return {...state, cartData:filteredProduct}
+
+            case ACTION_TYPE.FETCH_PRODUCTS :
+                return {...state, products:action.payload}
+
         default:
             return state;
     }
